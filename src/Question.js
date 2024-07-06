@@ -2,14 +2,14 @@ import React from "react"
 
 
 export default function Question(props) {
-    const [options, setOptions] = React.useState(() => getAns())
+    const [options] = React.useState(() => getAns())
 
 
     function shuffle(array) {
         let currentIndex = array.length;
 
         // While there remain elements to shuffle...
-        while (currentIndex != 0) {
+        while (currentIndex !== 0) {
 
             // Pick a remaining element...
             let randomIndex = Math.floor(Math.random() * currentIndex);
@@ -29,12 +29,12 @@ export default function Question(props) {
 
 
         if (props.calculated) {
-            if (props.qtn.correct_answer==ans){
+            if (props.qtn.correct_answer===ans){
 
                 clsName="correct"
 
             }
-            else if(props.qtn.correct_answer!=ans&&props.qtn.selected==ans){
+            else if(props.qtn.correct_answer!==ans&&props.qtn.selected===ans){
                 clsName="inCorrect"
             }
             else{
@@ -42,7 +42,7 @@ export default function Question(props) {
             }
         }
         else{
-            clsName = props.qtn.selected == ans ? "selected" : ""
+            clsName = props.qtn.selected === ans ? "selected" : ""
         }
         console.log(clsName)
 
@@ -64,7 +64,7 @@ export default function Question(props) {
 
     function select(event) {
         props.setQtns(prevQtns => {
-            let newQtns = prevQtns.map(qtn => qtn.question == props.qtn.question ? { ...qtn, selected: event.target.textContent } : qtn)
+            let newQtns = prevQtns.map(qtn => qtn.question === props.qtn.question ? { ...qtn, selected: event.target.textContent } : qtn)
             return newQtns
         })
     }
