@@ -1,0 +1,92 @@
+.intro-page {
+    height: 100vh;
+    background: #F5F7FB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro-page h1 {
+    color: #293264;
+    font-family: Karla;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 36.53px;
+    text-align: center;
+
+}
+
+.intro-page label{
+    color: #293264;
+    font-family: Karla;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 36.53px;
+    text-align: center;
+}
+
+select{
+    color: #293264;
+
+    width: 100px;
+    height: 52px;
+    border-radius: 15px;
+    background: #F5F7FB;
+
+    font-family: Karla;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36.53px;
+    text-align: center;
+
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+    border: none;
+
+}
+
+
+option {
+    background: #F5F7FB;
+    font-family: Karla;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36.53px;
+    text-align: center;
+
+
+}
+.intro-page button {
+    width: 193px;
+    height: 52px;
+    border-radius: 15px;
+    background: #4D5B9E;
+    color: #F5F7FB;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: center;
+
+    align-self: center;
+
+    border: none;
+
+    transition: 0.5s;
+}
+
+.intro-page button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.intro-page .blob1,
+.intro-page .blob2 {
+    min-width: 100px;
+    height: auto;
+    width: 10vw;
+}
+
+.intro-page .blob1 {
+    align-self: end;
+}
